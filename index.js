@@ -182,7 +182,7 @@ async function getHistory() {
       // Gắn thằng con vào li
       li.innerHTML = ` <div class="content">
           <p>${item.content}</p>
-          <p>Created:${formatDate}</p>
+          <p>Created: ${formatDate}</p>
         </div>
         <div class="todo-actions">
           <i class="fa-solid fa-pen" onclick="handleUpdate(${item.id},'${item.content}')"></i>
