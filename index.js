@@ -6,7 +6,7 @@ const displayResult = document.getElementById("displayResult");
 const resetResult = document.getElementById("resetResult");
 const displayHistory = document.getElementById("displayHistory");
 
-const resultPlay = document.querySelector(".resultPlay");
+const scoreElement = document.querySelector(".scoreElement");
 const resultText = document.querySelector(".text");
 const choicePlay = document.querySelector(".choicePlay");
 
@@ -95,8 +95,6 @@ function playGame(playMove) {
     }
   }
 
-  console.log(result);
-
   if (result === "You win.") {
     score.wins++;
   } else if (result === "You lose.") {
@@ -108,16 +106,16 @@ function playGame(playMove) {
   localStorage.setItem("score", JSON.stringify(score));
   // localStorage.removeItem('score');
 
-  updateScore();
-
   updateResult(result);
+
+  updateScore();
 
   updateUserAndComputerChoice(playMove, computerMove);
 }
 
 // Update score
 function updateScore() {
-  resultPlay.innerHTML = `${score.wins}:${score.loses}:${score.ties}`;
+  scoreElement.innerHTML = `Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.ties}`;
 }
 
 function updateResult(result) {
@@ -210,8 +208,7 @@ async function addHistory() {
   };
 
   try {
-    const response = await axios.post(API_URL, newItem);
-    console.log(response);
+    await axios.post(API_URL, newItem);
     getHistory();
   } catch (error) {
     console.log("THất bại" + error);

@@ -165,12 +165,16 @@ main .result-button .move-icon-result {
   font-style: italic;
 }
 
+.result-button .scoreElement {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
 .result-button .again-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .result-button .again-button button {
   font-size: 1.5rem;
@@ -343,8 +347,6 @@ main .result-button .move-icon-result {
   }
 }
 
-
-
 .History {
   margin-top: 20px;
 }
@@ -453,9 +455,4 @@ main .result-button .move-icon-result {
     font-size: 1rem;
   }
 
-}
-
-
-@media (max-width:385px){
-  
 }
