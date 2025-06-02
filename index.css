@@ -41,6 +41,8 @@ header {
   width: 100%;
   max-width:300px;
   margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 header h1 {
