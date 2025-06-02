@@ -263,7 +263,7 @@ function handleDelete(id) {
       if (result.isConfirmed) {
         await axios.delete(`${API_URL}/${id}`);
         getHistory();
-        showNOtification("Save successfully");
+        showNOtification("Deleted successfully");
       } else if (
         /* Read more about handling dismissals below */
         result.dismiss === Swal.DismissReason.cancel
