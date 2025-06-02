@@ -147,6 +147,7 @@ main .result-button .choicePlay {
 
 main .result-button .move-icon-result {
   height: 6rem;
+  object-fit: contain;
 }
 
 .result-button .resultPlay {
@@ -176,7 +177,7 @@ main .result-button .move-icon-result {
   font-style: italic;
   padding: 5px;
   color: #49225B;
-  border: none;
+  border: nône;
   background-color: transparent;
   cursor: pointer;
 }
@@ -215,6 +216,7 @@ main .result-button .move-icon-result {
   transition: var(--btn-transition);
   overflow: hidden;
   box-shadow: var(--btn-shadow);
+  
 }
 
 .ui-btn span {
@@ -230,10 +232,12 @@ main .result-button .move-icon-result {
   position: absolute;
   content: "";
   background: inherit;
+  
 }
 
 .ui-btn:hover, .ui-btn:focus {
   background: var(--btn-hover-bg);
+  outline: none;
 }
 
 .ui-btn:hover span, .ui-btn:focus span {
