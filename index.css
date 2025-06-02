@@ -35,6 +35,13 @@ header {
   border-bottom-style:dotted;
   border-bottom-color: #A56ABD;
 }
+.line-1{
+  border-top-style: dotted;
+  border-top-color: #A56ABD;
+  width: 100%;
+  max-width:300px;
+  margin: 0 auto;
+}
 
 header h1 {
   background: #49225B;
@@ -90,6 +97,7 @@ main .game-button .move-icon {
 }
 
 main .result-button {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -162,6 +170,7 @@ main .result-button .move-icon-result {
 }
 
 .result-button .text {
+  margin-top: 20px;
   font-style: italic;
 }
 
@@ -455,4 +464,15 @@ main .result-button .move-icon-result {
     font-size: 1rem;
   }
 
+  .result-button .text {
+    font-size: 1rem;
+  }
+
+  .result-button .scoreElement {
+    font-size: 1rem;
+  }
+
+  .line-1{
+    max-width:150px;
+  }
 }
