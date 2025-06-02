@@ -267,7 +267,7 @@ function handleDelete(id) {
       ) {
         swalWithBootstrapButtons.fire({
           title: "Cancelled",
-          text: "Your imaginary file is safe :)",
+          text: "Hửm??? :)))",
           icon: "error",
         });
       }
